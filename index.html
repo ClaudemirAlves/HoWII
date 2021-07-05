@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="LogoBabiCucas2.jpg" type="jpg" sizes="16x16">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="BabiCucas.css">
+    <title>Babi Cucas</title>
+</head>
+
+<body>
+    <!--barra superior-->
+    <div>
+        <div>
+            <button id="topplace" disabled="true">
+                <div id="topbar">
+                    <div id="barra_inicial">
+                        <p id="texto_inicial">Seja bem vinda(o) ao Babi Cucas!<br />Aqui você encontra as melhores cucas alemãs do Brasil!</p>
+                    </div>
+                    <p id="mensagemlogin">Olá, visitante! Sinta-se em casa!</p>
+                </div>
+                <div id="coracao">
+                    <img src="coracao10fr.png" alt="Um coração vermelho" style="width:80%">
+                </div>
+            </button> 
+        </div>
+    </div>
+    <!--menu-->
+    <nav id="menu" class="navbar navbar-expand-lg navbar-dark bg-pink bg-gradient">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a style="border-radius:10px"; class="nav-link active" aria-current="page" href="#login">Já tem cadastro? Faça login aqui</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="border-radius:10px"; class="nav-link active" aria-current="page" href="#cadastro">Ou você pode se cadastrar aqui</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="border-radius:10px"; class="nav-link active" aria-current="page" href="#menudecucas">Menu de Cucas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="border-radius:10px"; class="nav-link active" aria-current="page" href="#pedidos">Seus pedidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="border-radius:10px"; class="nav-link active" aria-current="page" href="#sobre">Sobre mim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--slider-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="box">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div id="slider" class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="cucadebanana.jpg" style="width:100%; height: 500px;" class="d-block w-100" alt="Cuca de Banana">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p><button id="nomes" disabled="true">Cuca de Banana</button></p>
+                        <p><button id="textos" disabled="true">Deliciosa cuca de banana feita com farinha de trigo, açúcar, leite, ovos, banana, manteiga e fermento.</button></p>
+                        <p><br /></p>
+                        <p><br /></p>
+                        <p><button id="detalhes" disabled="true">Tradicional</button></p>
+                        <p><button id="detalhes" disabled="true">Oferta R$ 10,90</button></p>
+                        <button id="AddCarrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="cucadefarofa.JPG" style="width:100%; height: 500px;" class="d-block w-100" alt="Cuca de Farofa">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p><button id="nomes" disabled="true">Cuca de Farofa</button></p>
+                        <p><button id="textos" disabled="true">Deliciosa cuca de farofa feita com farinha de trigo, açúcar, leite zero lactose, ovos, manteiga e fermento.</button></p>
+                        <p><br /></p>
+                        <p><br /></p>
+                        <p><button id="detalhes" disabled="true">Sem Lactose</button></p>
+                        <p><button id="detalhes" disabled="true">Oferta R$ 14,90</button></p>
+                        <button id="AddCarrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="cucadechocolate.jpg" style="height: 500px;" class="d-block w-100" alt="Cuca de Chocolate">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p><button id="nomes" disabled="true">Cuca de Chocolate</button></p>
+                        <p><button id="textos" disabled="true">Deliciosa cuca de chocolate feita com farinha de trigo, açúcar, leite, ovos, chocolate, manteiga e fermento.</button></p>
+                        <p><br /></p>
+                        <p><br /></p>
+                        <p><button id="detalhes" disabled="true">Tradicional</button></p>
+                        <p><button id="detalhes" disabled="true">Oferta R$ 12,90</button></p>
+                        <button id="AddCarrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </div>
+    <!--Layout-->
+    <div class="box1" style="box-shadow: rgb(255, 0, 179) 10px 10px 40px; margin-bottom: 40px;">
+        <div id="layout1" class="p-3 mb-2 bg-dark text-white">
+            <div id="box1" class="box" style="box-shadow: rgb(255, 0, 234) 2px 2px 10px; margin-bottom: 2px;">
+                <div id="menudecucas">
+                    <div style="width: 100%; height:100px">
+                        <button id="botaofiltro" float="center">Tradicionais</button>
+                        <button id="botaofiltro" float="center">Glúten Free</button>
+                        <button id="botaofiltro" float="center">Lactose Free</button>
+                        <button id="botaofiltro" float="center">Glúten e Lactose Free</button>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="cucadegoiaba.jpg" class="img-fluid" alt="Cuca de Goiaba">
+                                <div class="col-md-8 ">
+                                    <div id="card" class="card-body">
+                                        <h1 class="card-title ">Cuca de Goiaba sem glúten</h1>
+                                        <p class="card-text ">
+                                            <p>Deliciosa cuca de goiaba feita com farinha de arroz, açúcar, leite, ovos, goiaba, manteiga e fermento.</p>
+                                        </p>
+                                        <p><button id="detalhes" disabled="true">Sem Glúten</button></p>
+                                        <p><button id="detalhes" disabled="true">17,90</button></p>
+                                        <button id="AddCarrinho2">Adicionar ao Carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 ">
+                                <img src="cucadecreme.jpg" class="img-fluid" alt="Cuca de Creme">
+                                <div class="col-md-8 ">
+                                    <div id="card" class="card-body">
+                                        <h1 class="card-title ">Cuca de Creme sem Lactose</h1>
+                                        <p class="card-text ">
+                                            <p>Deliciosa cuca de creme feita com farinha de trigo, açúcar, leite zero lactose, ovos, creme de leite zero lactose, leite condensado zero lactose, manteiga e fermento.</p>
+                                        </p>
+                                        <p><button id="detalhes" disabled="true">Sem Lactose</button></p>
+                                        <p><button id="detalhes" disabled="true">R$ 15,90</button></p>
+                                        <button id="AddCarrinho2">Adicionar ao Carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 ">
+                                <img src="cucadelaranja.JPG" class="img-fluid" alt="Cuca de Laranja">
+                                <div class="col-md-8 ">
+                                    <div id="card" class="card-body">
+                                        <h1 class="card-title ">Cuca de Laranja</h1>
+                                        <p class="card-text ">
+                                            <p>Deliciosa cuca de laranja feita com farinha de trigo, açúcar, leite, ovos, laranja, manteiga e fermento.</p>
+                                        </p>
+                                        <p><button id="detalhes" disabled="true">Tradicional</button></p>
+                                        <p><button id="detalhes" disabled="true">R$ 13,90</button></p>
+                                        <button id="AddCarrinho2">Adicionar ao Carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-0 ">
+                            <div class="col-md-4 ">
+                                <img src="cucadelimao.jpg" class="img-fluid" alt="Cuca de Limão">
+                                <div class="col-md-8 ">
+                                    <div id="card" class="card-body">
+                                        <h1 class="card-title ">Cuca de Limão sem Glúten e sem Lactose</h1>
+                                        <p class="card-text ">
+                                            <p>Deliciosa cuca de limão feita com farinha de arroz, açúcar, leite zero lactose, ovos, limão, manteiga e fermento.</p>
+                                        </p>
+                                        <p><button id="detalhes" disabled="true">Sem Glúten / Sem Lactose</button></p>
+                                        <p><button id="detalhes" disabled="true">R$ 19,90</button></p>
+                                        <button id="AddCarrinho2">Adicionar ao Carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 ">
+                                <img src="cucadeuva.jpg" class="img-fluid" alt="Cuca de Uva">
+                                <div class="col-md-8 ">
+                                    <div id="card" class="card-body">
+                                        <h1 class="card-title ">Cuca de Uva</h1>
+                                        <p class="card-text ">
+                                            <p>Deliciosa cuca de uva feita com farinha de trigo, açúcar, leite, ovos, uvas passas, manteiga e fermento.</p>
+                                        </p>
+                                        <p><button id="detalhes" disabled="true">Tradicional</button></p>
+                                        <p><button id="detalhes" disabled="true">Oferta R$ 12,90</button></p>
+                                        <button id="AddCarrinho2">Adicionar ao Carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 ">
+                                <img src="cucademaca.jpg" class="img-fluid" alt="Cuca de Maçã">
+                                <div class="col-md-8 ">
+                                    <div id="card" class="card-body">
+                                        <h1 class="card-title ">Cuca de Maçã</h1>
+                                        <p class="card-text ">
+                                            <p>Deliciosa cuca de maçã feita com farinha de trigo, açúcar, leite, ovos, manteiga e fermento.</p>
+                                        </p>
+                                        <p><button id="detalhes" disabled="true">Tradicional</button></p>
+                                        <p><button id="detalhes" disabled="true">Oferta R$ 12,90</button></p>
+                                        <button id="AddCarrinho2">Adicionar ao Carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+            <button id="maisopcoes">Encontre outras deliciosas opções</button>
+            </div>
+        </div>
+    </div>
+    <div id="box" class="box" style="box-shadow: red 2px 2px 10px;">
+        <footer id=" final " class=" pt-5 pb-5 p-3 bg-dark bg-gradient text-white">
+            <div id="sobre">
+                <div id="foter " class="row ">
+                    <div class="col-sm-4 " style="text-align: center; ">
+                        <button><img src="mapa.png" alt="Mapa do Google" width="100% " height="300 " style="border:0; " allowfullscreen=" " loading="lazy "></button>
+                    </div>
+                    <div class="col-sm-4 p-3 ">
+                        <p>Olá, visitante!<br />Me chamo Bárbara, sou formada em Eng. Química e apaixonada pelo mundo da culinária, mais especialmente pelos doces!<br />Espero que goste das nossas delícias!<br />Você também pode me encontrar nas redes sociais abaixo.</p>
+                        <button float="center" style="border:none; background-color: rgba(255, 228, 196, 0)">
+                            <img src="logoyoutube.png" alt="Logo do Youtube" width="10%" ><img src="logowhats.png" alt="Logo do Whats" width="10%"><img src="logoinstagran.jpg" alt="Logo do Instagran" width="10%"><img src="logoface.png" alt="Logo do Facebook" width="10%"><img src="logogmail.png" alt="Logo do Gmail" width="10%">
+                        </button>
+                        <p><img src="LogoBabiCucas2.jpg" alt="Logo da Marca Babi Cucas" style="width:8%"></p>
+                        <p>Desde 2021 - Copyright © Todos os direitos reservados</p>
+                    </div>
+                    <div class="col-sm-4 ">
+                        <img class="img-fluid " src="fotobabi.jpg" alt="Foto da Babi">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
